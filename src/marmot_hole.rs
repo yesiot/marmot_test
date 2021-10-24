@@ -30,10 +30,7 @@ impl HidingPlace for MarmotHole {
 /// assert_eq!(marmot_found, true);
 /// ```
 pub fn find_marmot(depth: u32) -> bool {
-    if depth > 20 {
-        return true;
-    }
-    false
+    depth > 20
 }
 
 pub fn find_marmot_in(hiding_place: &dyn HidingPlace) -> bool {
